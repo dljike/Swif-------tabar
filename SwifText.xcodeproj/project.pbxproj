@@ -14,6 +14,10 @@
 		0426A9F61CC632280043DEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0426A9F41CC632280043DEBD /* LaunchScreen.storyboard */; };
 		0426AA011CC632280043DEBD /* SwifTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426AA001CC632280043DEBD /* SwifTextTests.swift */; };
 		0426AA0C1CC632280043DEBD /* SwifTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426AA0B1CC632280043DEBD /* SwifTextUITests.swift */; };
+		0426AA241CC645D70043DEBD /* TowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426AA231CC645D70043DEBD /* TowViewController.swift */; };
+		04303BC01CCF7A4500F1865B /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 04303BBE1CCF7A4500F1865B /* map.png */; };
+		04303BC11CCF7A4500F1865B /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 04303BBF1CCF7A4500F1865B /* me.png */; };
+		04303BC51CCF7BE300F1865B /* ThreePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04303BC41CCF7BE300F1865B /* ThreePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0426AA071CC632280043DEBD /* SwifTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0426AA0B1CC632280043DEBD /* SwifTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifTextUITests.swift; sourceTree = "<group>"; };
 		0426AA0D1CC632280043DEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0426AA231CC645D70043DEBD /* TowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowViewController.swift; sourceTree = "<group>"; };
+		04303BBE1CCF7A4500F1865B /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		04303BBF1CCF7A4500F1865B /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
+		04303BC41CCF7BE300F1865B /* ThreePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,12 @@
 		0426A9EA1CC632270043DEBD /* SwifText */ = {
 			isa = PBXGroup;
 			children = (
+				04303BBE1CCF7A4500F1865B /* map.png */,
+				04303BBF1CCF7A4500F1865B /* me.png */,
 				0426A9EB1CC632270043DEBD /* AppDelegate.swift */,
+				04303BC41CCF7BE300F1865B /* ThreePageViewController.swift */,
 				0426A9ED1CC632270043DEBD /* ViewController.swift */,
+				0426AA231CC645D70043DEBD /* TowViewController.swift */,
 				0426A9EF1CC632270043DEBD /* Main.storyboard */,
 				0426A9F21CC632280043DEBD /* Assets.xcassets */,
 				0426A9F41CC632280043DEBD /* LaunchScreen.storyboard */,
@@ -229,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04303BC11CCF7A4500F1865B /* me.png in Resources */,
+				04303BC01CCF7A4500F1865B /* map.png in Resources */,
 				0426A9F61CC632280043DEBD /* LaunchScreen.storyboard in Resources */,
 				0426A9F31CC632280043DEBD /* Assets.xcassets in Resources */,
 				0426A9F11CC632270043DEBD /* Main.storyboard in Resources */,
@@ -256,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04303BC51CCF7BE300F1865B /* ThreePageViewController.swift in Sources */,
 				0426A9EE1CC632270043DEBD /* ViewController.swift in Sources */,
+				0426AA241CC645D70043DEBD /* TowViewController.swift in Sources */,
 				0426A9EC1CC632270043DEBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +500,7 @@
 				0426AA121CC632280043DEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0426AA131CC632280043DEBD /* Build configuration list for PBXNativeTarget "SwifTextTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				0426AA151CC632280043DEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0426AA161CC632280043DEBD /* Build configuration list for PBXNativeTarget "SwifTextUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				0426AA181CC632280043DEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

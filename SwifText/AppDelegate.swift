@@ -16,6 +16,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+        
+        let rootV1 = ViewController()
+        let rootV2 = TowViewController()
+        let rootV3 = ThreePageViewController()
+        
+        let nvc1=UINavigationController(rootViewController:rootV1);
+        nvc1.tabBarItem.image = UIImage(named: "map")
+        nvc1.title = "地图"
+        
+        let nvc2=UINavigationController(rootViewController:rootV2);
+         nvc2.tabBarItem = UITabBarItem(tabBarSystemItem:UITabBarSystemItem.Favorites, tag: 0)
+     
+        
+        
+        let nvc3 = UINavigationController(rootViewController: rootV3)
+//        nvc3.tabBarItem.image = UIImage(named: "me"
+//        nvc3.title = "我的"
+        nvc3.tabBarItem = UITabBarItem(title: "我的", image: UIImage(named: "me"), selectedImage: UIImage(named: "me"))
+        
+        
+        
+         let tabar = UITabBarController()
+        tabar.viewControllers = [nvc1,nvc2,nvc3];
+        self.window!.rootViewController = tabar;
+        
+        
+        
+        
         return true
     }
 
