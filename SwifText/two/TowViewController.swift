@@ -20,11 +20,12 @@ class TowViewController: UIViewController,UICollectionViewDataSource,UICollectio
         
         for i in 1...20 {
             array.append("\(i)-1")
+            NSLog("--------", array)
         }
         
         return array
     }()
-//
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
